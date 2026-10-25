@@ -7,3 +7,12 @@
 @media(min-width:701px) and (max-width:1200px){.hero{min-height:135vh}.hero h1{font-size:clamp(4rem,10vw,8.4rem)}.hero-image{top:42vh;width:48vw}.work,.work-b,.work-c{grid-template-columns:2.5rem minmax(0,1.05fr) minmax(0,.95fr);gap:1rem}.work h2{font-size:clamp(2.5rem,4.7vw,4.5rem)}.work img,.work-b img,.work-c img{height:50vw}}
 @media(max-width:700px){.hero{min-height:0;padding:2rem 1rem 5rem;display:flex;flex-direction:column}.hero h1{font-size:clamp(3.2rem,13.4vw,6.2rem);line-height:.9;margin:3rem 0 1.5rem}.hero h1 .indent{margin-left:0}.hero-image{position:relative;top:auto;right:auto;width:100%;margin:0}.hero-image img{height:min(125vw,600px);max-height:none}.intro{position:static;bottom:auto;left:auto;max-width:26rem;width:100%;margin:2rem 0 0;font-size:clamp(1.5rem,5vw,2rem)}.work,.work-b,.work-c{grid-template-columns:2rem minmax(0,1fr);grid-template-rows:auto auto auto;gap:.8rem 1rem;margin-bottom:6rem}.work .work-num{grid-column:1;grid-row:1}.work .image-wrap{grid-column:2;grid-row:1}.work h2{grid-column:2;grid-row:2;font-size:clamp(2.8rem,12vw,5.5rem);margin:1rem 0 0}.work p{grid-column:2;grid-row:3}.work img,.work-b img,.work-c img{height:110vw}.note-hero h1{font-size:clamp(3.6rem,13vw,6rem);line-height:.98}.standfirst{margin:0 0 3rem;width:min(100%,32rem);max-width:100%}.note-image img{height:65svh}.next a{font-size:clamp(3rem,12vw,5rem)}.footer-title{font-size:15vw}}
 @media(max-width:360px){.hero h1{font-size:12.4vw}.note-hero h1{font-size:12vw}.work h2{font-size:11vw}}
+
+/* Desktop-only hero caption: keep it entirely in the left column, clear of the photo. */
+@media (min-width: 701px) {
+  .hero .intro {
+    left: clamp(2rem, 6vw, 7rem);
+    width: min(35vw, 34rem);
+    max-width: 35vw;
+  }
+}
